@@ -1,0 +1,50 @@
+<header>
+  <div class='container'>
+    <div class='row'>
+      <a href='/' class='brand'>{{brand}}</a>
+      <nav>
+        <a href='/new' class='hiring'>are you hiring?</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class='container'>
+    <p class='find'>Find a job, today!</p>
+    {{#each details}}
+      <a href="/jobs/{{job_id}}" class='box'>
+        <div class='row'>
+
+          <div class='left'>
+
+            <h1>{{position}}</h1>
+            <p class="company">{{company}}</p>
+
+            <p>{{location}}</p>
+
+          </div>
+          <div class='right'>
+            <p class="tech">{{technologies}}</p>
+          </div>
+        </div>
+      </a>
+    {{else}}
+      <p>No jobs available at the moment.</p>
+    {{/each}}
+  </div>
+</main>
+
+<footer>
+  <div class='container'>
+    <address>
+      Built by Teri
+    </address>
+    <p>Reach out on Twitter
+      <span>
+        <a href='https://twitter.com/terieyenike' target="_">@terieyenike</a>
+      </span>
+    </p>
+    <small>Copyright &copy; 2021</small>
+  </div>
+</footer>

@@ -1,0 +1,34 @@
+<div class='jobs__container'>
+  <a href='/' rel='noopener noreferrer'>{{btn}}</a>
+  {{#each details}}
+    <div class='container'>
+      <h1>{{position}}</h1>
+      <p>{{company}}</p>
+      <p>Location: <span>{{location}}</span></p>
+      <a href={{website}} class="web" target="_">{{company}}</a>
+      <p>{{technologies}}</p>
+
+      <p class="desc">{{description}}</p>
+
+      <a
+        href={{application_url}}
+        class='apply'
+        target='_'
+        rel='noopener noreferrer'
+      >apply now</a>
+    </div>
+  {{/each}}
+</div>
+<footer>
+  <div class='container'>
+    <address>
+      Built by Teri
+    </address>
+    <p>Reach out on Twitter
+      <span>
+        <a href='https://twitter.com/terieyenike' target="_">@terieyenike</a>
+      </span>
+    </p>
+    <small>Copyright &copy; 2021</small>
+  </div>
+</footer>

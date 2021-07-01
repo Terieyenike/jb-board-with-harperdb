@@ -1,0 +1,316 @@
+body {
+  font-size: 1.3rem;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --text-color: #565656;
+  --primary-color: #008ad8;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Montserrat, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+header,
+footer,
+main {
+  text-align: center;
+}
+
+header {
+  padding: 1em 0;
+}
+
+.brand,
+.hiring {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.row .brand {
+  margin-bottom: 1.5em;
+  color: #333;
+}
+
+nav .hiring {
+  border: 1px solid #333;
+  padding: 0.5em 1em;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.find {
+  font-weight: 400;
+  margin-bottom: 2em;
+  background-color: rgb(236, 236, 236);
+  display: inline-block;
+  padding: 0.75em 2em;
+}
+
+.box {
+  border: 1px solid #333;
+  width: 100%;
+  color: #333;
+  padding: 1em;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.left h1 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+  font-weight: 700;
+}
+
+.company {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.tech {
+  font-size: 1rem;
+  margin-top: 0.5em;
+}
+
+.img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+  font-size: 1rem;
+  text-align: left
+}
+
+.error {
+  background: #ffb3b3;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  font-size: 0.85em;
+  font-weight: bold;
+  margin-top: -0.1em;
+}
+
+.cta {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75em;
+  color: white;
+  background: var(--primary-color);
+  margin-top: 1.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 0.2em;
+  border: unset;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.2em;
+  border: 1px solid #acacac;
+  color: #1b1820;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid #acacac;
+}
+
+.add a[href="/"] {
+  margin: 1.5em 0 1.5em;
+  text-transform: capitalize;
+}
+
+.add h1 {
+  text-transform: uppercase;
+}
+
+.add a[href='/'] {
+  margin-bottom: 1em;
+}
+
+footer {
+  font-size: 1rem;
+  padding: 1em 0;
+}
+
+footer address,
+p {
+  margin-bottom: 0.75em;
+}
+
+.error {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  text-align: center;
+}
+
+.error h1 {
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.error h2 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.jobs__container {
+  padding: 2.5em 0;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.jobs__container a {
+  color: #333;
+}
+
+.jobs__container a[href='/'] {
+  margin-bottom: 2em;
+  text-transform: capitalize;
+}
+
+.jobs__container h1 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.jobs__container p {
+  margin-bottom: 1.5rem;
+}
+
+.jobs__container p > span {
+  font-weight: bold;
+}
+
+.desc {
+  text-align: left;
+}
+
+a.web {
+  margin-bottom: 1.5em;
+  color: var(--primary-color)
+}
+
+.apply {
+  border: 1px solid #333;
+  padding: 0.75em 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 3em;
+}
+
+@media (min-width: 768px) {
+  header {
+    text-align: left;
+  }
+
+  header {
+    margin: 2em 0;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+  }
+
+  .row .brand {
+    margin: 0;
+  }
+
+  nav .hiring {
+    margin: 0;
+  }
+
+  .find {
+    font-size: 1.5rem;
+    margin-bottom: 2.5em;
+  }
+
+  .left h1 {
+    font-size: 1.75rem;
+  }
+
+  .company {
+    font-size: 1.3rem;
+  }
+
+  .box .row {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  footer {
+    font-size: 1.3rem;
+  }
+
+  .jobs__container h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 65%;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+
+  .jobs__container h1 {
+    font-size: 3.5rem;
+  }
+
+  .jobs__container p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .box {
+    padding: 0.75em;
+  }
+
+  .left h1 {
+    font-size: 1rem;
+  }
+
+  .jobs__container h1 {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,66 @@
+<div class='bg'>
+  <img class='img' src='/assets/png/map_dark-1.png' alt='' />
+</div>
+
+<div class='container add'>
+  <a href='/' class="back">back to all jobs</a>
+
+  <h1>post a job</h1>
+
+  <main>
+    <form action='/new' method='post'>
+      <label for='company' class='label'>Company Name</label>
+      <input type='text' id='company' name='company' />
+      <label for='position' class='label'>Job Position</label>
+      <input type='text' id='position' name='position' />
+      <label for='location' class='label'>Job Location</label>
+      <input type='text' id='location' name='location'  />
+      <label for='technologies' class='label'>Technologies</label>
+      <input
+        type='text'
+        id='technologies'
+        name='technologies'
+
+        placeholder='JavaScript, PHP, NodeJs'
+      />
+      <label for='min_salary' class='label'>Minimum Salary (in USD, annual)</label>
+      <input
+        type='text'
+        id='min_salary'
+        name='min_salary'
+
+      />
+      <label for='max_salary' class='label'>Maximum Salary (in USD, annual)</label>
+      <input
+        type='text'
+        id='max_salary'
+        name='max_salary'
+
+      />
+      <label for='application_url' class='label'>Application URL</label>
+      <input
+        type='text'
+        id='application_url'
+        name='application_url'
+
+      />
+      <label for='email' class='label'>E-mail</label>
+      <input type='text' id='email' name='email'  />
+      <label for='pub_email' class='label'>Public Company E-mail</label>
+      <input type='text' id='pub_email' name='pub_email' />
+      <label for='website' class='label'>Company Website</label>
+      <input type='text' id='website' name='website'  />
+      <label for='twitter' class='label'>Company Twitter</label>
+      <input type='text' id='twitter' name='twitter'  />
+      <label for='description' class='label'>Job Description</label>
+      <textarea
+        name='description'
+        id='description'
+        placeholder='Describe the details of the job'
+        rows='10'
+      >{{description}}</textarea>
+
+      <input type='submit' class='cta' value='Submit Job' />
+    </form>
+  </main>
+</div>
