@@ -16,22 +16,24 @@ The job board application provides the opportunity to post job available in the 
 2. Initialize the directory with
 
    `npm init -y`
-The flag -y simply state you accept the default changes into your directory.
+   The flag -y simply state you accept the default changes into your directory.
 
 3. Install the dependencies
 
-`npm install harperive dotenv hbs express`
+   `npm install harperive dotenv hbs express`
 
 4. Install the dev depency, nodemon
 
-`npm install --save-dev nodemon`
+   `npm install --save-dev nodemon`
 
 ## Start the project
-`npm run start:dev`
+   `npm run start:dev`
 
 ## Deployment
-Heroku app
+   
+   Heroku app
 
 
 ### Author
+
 Teri Eyenike
