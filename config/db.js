@@ -1,4 +1,5 @@
 const harperive = require('harperive');
+// interesting choice, why did you decide to go with harperive for a local db?
 
 const DB_CONFIG = {
   harperHost: process.env.DB_HOST,
