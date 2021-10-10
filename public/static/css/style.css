@@ -2,7 +2,7 @@ body {
   font-size: 1.3rem;
   font-family: 'Inter', sans-serif;
 }
-
+/* great use of rems and em. */
 :root {
   --text-color: #565656;
   --primary-color: #008ad8;
@@ -23,6 +23,7 @@ h4 {
 
 a {
   text-decoration: none;
+  /* removing the text decoration is generally frowned upon because it's heavily used for accessibility readers */
   display: inline-block;
 }
 
@@ -51,7 +52,7 @@ nav .hiring {
   border: 1px solid #333;
   padding: 0.5em 1em;
   color: #333;
-  margin-bottom: 1em;
+  margin-bottom: 1em; 
 }
 
 .find {
